@@ -1,0 +1,993 @@
+# awesome-rust-tools - 工具映射定义
+# 命名规则: 主映射 = [tool]-rs (例如 find-rs); 次选 = 原 binary 名
+# 所有安装命令（apt/cargo/brew/dnf/pacman）必须存在，安装时按本机包管理器选择
+
+mappings:
+  - name: find-rs
+    tool: sharkdp/fd
+    binary: fd
+    replaces: find
+    desc: "Fast and user-friendly find alternative"
+    speed: "5-10x faster than find"
+    mem: "1/3 to 1/5 of find"
+    size: "~1.4MB"
+    src: "github.com/sharkdp/fd#benchmark"
+    apt: "fd"
+    cargo: "fd"
+    brew: "fd"
+    dnf: "fd"
+    pacman: "fd"
+  - name: grep-rs
+    tool: BurntSushi/ripgrep
+    binary: rg
+    replaces: grep
+    desc: "Line-oriented regex search (grep alternative)"
+    speed: "4-20x faster than GNU grep"
+    mem: "< 1/2 of grep"
+    size: "~4MB"
+    src: "github.com/BurntSushi/ripgrep#benchmark"
+    apt: "ripgrep"
+    cargo: "ripgrep"
+    brew: "ripgrep"
+    dnf: "ripgrep"
+    pacman: "ripgrep"
+  - name: ls-rs
+    tool: eza-community/eza
+    binary: eza
+    replaces: ls
+    desc: "Modern ls with icons and git integration"
+    speed: "similar to ls (visual upgrade)"
+    mem: "~10MB (icons)"
+    size: "~4MB"
+    src: "github.com/eza-community/eza"
+    apt: "eza"
+    cargo: "eza"
+    brew: "eza"
+    dnf: "eza"
+    pacman: "eza"
+  - name: cat-rs
+    tool: sharkdp/bat
+    binary: bat
+    replaces: cat
+    desc: "cat clone with syntax highlighting and git diff"
+    speed: "similar to cat"
+    mem: "2-3x of cat (syntax highlight)"
+    size: "~4MB"
+    src: "github.com/sharkdp/bat"
+    apt: "bat"
+    cargo: "bat"
+    brew: "bat"
+    dnf: "bat"
+    pacman: "bat"
+  - name: du-rs
+    tool: bootandy/dust
+    binary: dust
+    replaces: du
+    desc: "Intuitive du with visual tree (multi-core)"
+    speed: "2-5x faster than du"
+    mem: "controlled"
+    size: "~1MB"
+    src: "github.com/bootandy/dust"
+    apt: "dust"
+    cargo: "dust"
+    brew: "dust"
+    dnf: "dust"
+    pacman: "dust"
+  - name: ps-rs
+    tool: dalance/procs
+    binary: procs
+    replaces: ps
+    desc: "Modern ps replacement with color and search"
+    speed: "5x faster startup than ps"
+    mem: "~5-10MB"
+    size: "~3MB"
+    src: "github.com/dalance/procs#benchmarks"
+    apt: "procs"
+    cargo: "procs"
+    brew: "procs"
+    dnf: "procs"
+    pacman: "procs"
+  - name: top-rs
+    tool: ClementTsang/bottom
+    binary: btm
+    replaces: top
+    desc: "Cross-platform system monitor (top/htop alt)"
+    speed: "30-50ms startup"
+    mem: "~15-30MB"
+    size: "~3MB"
+    src: "github.com/ClementTsang/bottom"
+    apt: "bottom"
+    cargo: "bottom"
+    brew: "bottom"
+    dnf: "bottom"
+    pacman: "bottom"
+  - name: cd-rs
+    tool: ajeetdsouza/zoxide
+    binary: zoxide
+    replaces: cd
+    desc: "Smarter cd with frecency-based jump"
+    speed: "instant jump"
+    mem: "~5MB"
+    size: "~2MB"
+    src: "github.com/ajeetdsouza/zoxide#benchmarks"
+    apt: "zoxide"
+    cargo: "zoxide"
+    brew: "zoxide"
+    dnf: "zoxide"
+    pacman: "zoxide"
+  - name: rm-rs
+    tool: trash-cli/trash-cli
+    binary: trash-put
+    replaces: rm
+    desc: "CLI trash manager (safe rm alternative)"
+    speed: "depends on FS"
+    mem: "~3MB"
+    size: "~2MB"
+    src: "github.com/trash-cli/trash-cli"
+    apt: "trash-cli"
+    cargo: "trash-cli"
+    brew: "trash-cli"
+    dnf: "trash-cli"
+    pacman: "trash-cli"
+  - name: tree-rs
+    tool: Canop/broot
+    binary: broot
+    replaces: tree
+    desc: "Interactive tree navigator with search"
+    speed: "faster than tree on large dirs"
+    mem: "~20-50MB"
+    size: "~8MB"
+    src: "github.com/Canop/broot"
+    apt: "broot"
+    cargo: "broot"
+    brew: "broot"
+    dnf: "broot"
+    pacman: "broot"
+  - name: sed-rs
+    tool: chmln/sd
+    binary: sd
+    replaces: sed
+    desc: "Intuitive find-and-replace (sed alternative)"
+    speed: "similar or slightly faster than sed"
+    mem: "~2MB"
+    size: "~2MB"
+    src: "github.com/chmln/sd#benchmarks"
+    apt: "sd"
+    cargo: "sd"
+    brew: "sd"
+    dnf: "sd"
+    pacman: "sd"
+  - name: jq-rs
+    tool: 01mf02/jaq
+    binary: jaq
+    replaces: jq
+    desc: "jq clone focused on correctness and speed"
+    speed: "1.5-3x faster than jq"
+    mem: "1/2 to 1/3 of jq"
+    size: "~1MB"
+    src: "github.com/01mf02/jaq#benchmarks"
+    apt: "jaq"
+    cargo: "jaq"
+    brew: "jaq"
+    dnf: "jaq"
+    pacman: "jaq"
+  - name: curl-rs
+    tool: Orange-OpenSource/hurl
+    binary: hurl
+    replaces: curl
+    desc: "HTTP requests with plain text (curl alt)"
+    speed: "similar to curl"
+    mem: "~5-10MB"
+    size: "~10MB"
+    src: "github.com/Orange-OpenSource/hurl"
+    apt: "hurl"
+    cargo: "hurl"
+    brew: "hurl"
+    dnf: "hurl"
+    pacman: "hurl"
+  - name: xargs-rs
+    tool: lotabout/rargs
+    binary: rargs
+    replaces: xargs
+    desc: "xargs + awk with pattern matching"
+    speed: "faster startup than xargs (rust)"
+    mem: "~5MB"
+    size: "~3MB"
+    src: "github.com/lotabout/rargs"
+    apt: "rargs"
+    cargo: "rargs"
+    brew: "rargs"
+    dnf: "rargs"
+    pacman: "rargs"
+  - name: parallel-rs
+    tool: aaronriekenberg/rust-parallel
+    binary: rust-parallel
+    replaces: parallel
+    desc: "Parallel command execution (GNU parallel alt)"
+    speed: "4-10x faster than xargs (N-core parallel)"
+    mem: "~5MB"
+    size: "~3MB"
+    src: "github.com/aaronriekenberg/rust-parallel"
+    apt: "rust-parallel"
+    cargo: "rust-parallel"
+    brew: "rust-parallel"
+    dnf: "rust-parallel"
+    pacman: "rust-parallel"
+  - name: tldr-rs
+    tool: dbrgn/tealdeer
+    binary: tldr
+    replaces: tldr
+    desc: "Fast tldr pages client"
+    speed: "10-20ms (vs 200-500ms nodejs)"
+    mem: "~5MB (vs 30MB+)"
+    size: "~3MB"
+    src: "github.com/dbrgn/tealdeer#benchmarks"
+    apt: "tealdeer"
+    cargo: "tealdeer"
+    brew: "tealdeer"
+    dnf: "tealdeer"
+    pacman: "tealdeer"
+  - name: time-rs
+    tool: sharkdp/hyperfine
+    binary: hyperfine
+    replaces: time
+    desc: "Command-line benchmarking tool"
+    speed: "similar to time"
+    mem: "~5MB"
+    size: "~3MB"
+    src: "github.com/sharkdp/hyperfine"
+    apt: "hyperfine"
+    cargo: "hyperfine"
+    brew: "hyperfine"
+    dnf: "hyperfine"
+    pacman: "hyperfine"
+  - name: diff-rs
+    tool: dandavison/delta
+    binary: delta
+    replaces: diff
+    desc: "Syntax-highlighting pager for diff/git"
+    speed: "similar to diff"
+    mem: "~10-20MB (syntax highlight)"
+    size: "~6MB"
+    src: "github.com/dandavison/delta"
+    apt: "git-delta"
+    cargo: "git-delta"
+    brew: "git-delta"
+    dnf: "git-delta"
+    pacman: "git-delta"
+  - name: kill-rs
+    tool: jacek-kurlit/pik
+    binary: pik
+    replaces: kill
+    desc: "Interactive process killer (pkill alt)"
+    speed: "5-10x faster than ps+grep+kill"
+    mem: "~5MB"
+    size: "~3MB"
+    src: "github.com/jacek-kurlit/pik"
+    apt: "pik"
+    cargo: "pik"
+    brew: "pik"
+    dnf: "pik"
+    pacman: "pik"
+  - name: make-rs
+    tool: casey/just
+    binary: just
+    replaces: make
+    desc: "Command runner (modern make alt)"
+    speed: "faster than make on simple tasks"
+    mem: "~2MB"
+    size: "~3MB"
+    src: "github.com/casey/just"
+    apt: "just"
+    cargo: "just"
+    brew: "just"
+    dnf: "just"
+    pacman: "just"
+  - name: tmux-rs
+    tool: zellij-org/zellij
+    binary: zellij
+    replaces: tmux
+    desc: "Terminal workspace (tmux/screen alt)"
+    speed: "50-100ms startup"
+    mem: "~30-50MB"
+    size: "~10MB"
+    src: "github.com/zellij-org/zellij"
+    apt: "zellij"
+    cargo: "zellij"
+    brew: "zellij"
+    dnf: "zellij"
+    pacman: "zellij"
+  - name: xterm-rs
+    tool: alacritty/alacritty
+    binary: alacritty
+    replaces: xterm
+    desc: "GPU-accelerated terminal emulator"
+    speed: "30-50ms startup, low input latency"
+    mem: "~30-50MB idle"
+    size: "~5MB"
+    src: "github.com/alacritty/alacritty"
+    apt: "alacritty"
+    cargo: "alacritty"
+    brew: "alacritty"
+    dnf: "alacritty"
+    pacman: "alacritty"
+  - name: iftop-rs
+    tool: imsnif/bandwhich
+    binary: bandwhich
+    replaces: iftop
+    desc: "Terminal bandwidth utilization tool"
+    speed: "real-time via BPF/eBPF"
+    mem: "~10-20MB"
+    size: "~5MB"
+    src: "github.com/imsnif/bandwhich"
+    apt: "bandwhich"
+    cargo: "bandwhich"
+    brew: "bandwhich"
+    dnf: "bandwhich"
+    pacman: "bandwhich"
+  - name: neofetch-rs
+    tool: Macchina-CLI/macchina
+    binary: macchina
+    replaces: neofetch
+    desc: "System information frontend"
+    speed: "~10-20ms (vs 100-200ms bash neofetch)"
+    mem: "~5MB"
+    size: "~5MB"
+    src: "github.com/Macchina-CLI/macchina"
+    apt: "macchina"
+    cargo: "macchina"
+    brew: "macchina"
+    dnf: "macchina"
+    pacman: "macchina"
+  - name: fzf-rs
+    tool: lotabout/skim
+    binary: sk
+    replaces: fzf
+    desc: "Fuzzy finder (fzf alternative)"
+    speed: "10-20ms startup"
+    mem: "~5-10MB"
+    size: "~2MB"
+    src: "github.com/lotabout/skim"
+    apt: "skim"
+    cargo: "skim"
+    brew: "skim"
+    dnf: "skim"
+    pacman: "skim"
+  - name: traceroute-rs
+    tool: fujiapple852/trippy
+    binary: trippy
+    replaces: traceroute
+    desc: "Network diagnostic tool"
+    speed: "~10ms startup"
+    mem: "~5-10MB"
+    size: "~3MB"
+    src: "github.com/fujiapple852/trippy"
+    apt: "trippy"
+    cargo: "trippy"
+    brew: "trippy"
+    dnf: "trippy"
+    pacman: "trippy"
+  - name: nmap-rs
+    tool: RustScan/RustScan
+    binary: rustscan
+    replaces: nmap
+    desc: "Modern port scanner"
+    speed: "3x faster than nmap (adaptive batching)"
+    mem: "~10-20MB"
+    size: "~5MB"
+    src: "github.com/RustScan/RustScan"
+    apt: "rustscan"
+    cargo: "rustscan"
+    brew: "rustscan"
+    dnf: "rustscan"
+    pacman: "rustscan"
+  - name: strace-rs
+    tool: JakWai01/lurk
+    binary: lurk
+    replaces: strace
+    desc: "Pretty strace alternative"
+    speed: "~10ms startup"
+    mem: "~5MB"
+    size: "~3MB"
+    src: "github.com/JakWai01/lurk"
+    apt: "lurk"
+    cargo: "lurk"
+    brew: "lurk"
+    dnf: "lurk"
+    pacman: "lurk"
+  - name: tcpdump-rs
+    tool: jvns/dnspeep
+    binary: dnspeep
+    replaces: tcpdump
+    desc: "DNS query spy"
+    speed: "focused (DNS only)"
+    mem: "~3MB"
+    size: "~2MB"
+    src: "github.com/jvns/dnspeep"
+    apt: "dnspeep"
+    cargo: "dnspeep"
+    brew: "dnspeep"
+    dnf: "dnspeep"
+    pacman: "dnspeep"
+  - name: bc-rs
+    tool: printfn/fend
+    binary: fend
+    replaces: bc
+    desc: "Arbitrary-precision unit-aware calculator"
+    speed: "~10-20ms startup"
+    mem: "~3MB"
+    size: "~3MB"
+    src: "github.com/printfn/fend"
+    apt: "fend"
+    cargo: "fend"
+    brew: "fend"
+    dnf: "fend"
+    pacman: "fend"
+  - name: cloc-rs
+    tool: XAMPPRocky/tokei
+    binary: tokei
+    replaces: cloc
+    desc: "Fast code counter"
+    speed: "10-20x faster than cloc"
+    mem: "~30-50MB (vs 200MB cloc)"
+    size: "~3MB"
+    src: "github.com/XAMPPRocky/tokei"
+    apt: "tokei"
+    cargo: "tokei"
+    brew: "tokei"
+    dnf: "tokei"
+    pacman: "tokei"
+  - name: tig-rs
+    tool: extrawurst/gitui
+    binary: gitui
+    replaces: tig
+    desc: "Terminal UI for git (tig alternative)"
+    speed: "30-50ms startup"
+    mem: "~15-30MB"
+    size: "~5MB"
+    src: "github.com/extrawurst/gitui"
+    apt: "gitui"
+    cargo: "gitui"
+    brew: "gitui"
+    dnf: "gitui"
+    pacman: "gitui"
+  - name: git-rs
+    tool: Byron/gitoxide
+    binary: gix
+    replaces: git
+    desc: "Pure Rust git implementation"
+    speed: "2-10x faster on internal commands"
+    mem: "1/2 to 1/3 of git"
+    size: "~6MB"
+    src: "github.com/Byron/gitoxide"
+    apt: "gitoxide"
+    cargo: "gitoxide"
+    brew: "gitoxide"
+    dnf: "gitoxide"
+    pacman: "gitoxide"
+  - name: nvm-rs
+    tool: Schniz/fnm
+    binary: fnm
+    replaces: nvm
+    desc: "Fast Node.js version manager"
+    speed: "20-50ms (vs 300-500ms nvm bash)"
+    mem: "~10MB (vs 20-30MB nvm)"
+    size: "~5MB"
+    src: "github.com/Schniz/fnm"
+    apt: "fnm"
+    cargo: "fnm"
+    brew: "fnm"
+    dnf: "fnm"
+    pacman: "fnm"
+  - name: asdf-rs
+    tool: jdx/mise
+    binary: mise
+    replaces: asdf
+    desc: "Dev tools, env vars, task runner"
+    speed: "30-50ms (vs 200-500ms asdf)"
+    mem: "~15MB"
+    size: "~10MB"
+    src: "github.com/jdx/mise"
+    apt: "mise"
+    cargo: "mise"
+    brew: "mise"
+    dnf: "mise"
+    pacman: "mise"
+  - name: hexdump-rs
+    tool: sharkdp/hexyl
+    binary: hexyl
+    replaces: hexdump
+    desc: "Command-line hex viewer"
+    speed: "~5ms startup"
+    mem: "~2MB"
+    size: "~2MB"
+    src: "github.com/sharkdp/hexyl"
+    apt: "hexyl"
+    cargo: "hexyl"
+    brew: "hexyl"
+    dnf: "hexyl"
+    pacman: "hexyl"
+  - name: ccache-rs
+    tool: mozilla/sccache
+    binary: sccache
+    replaces: ccache
+    desc: "Compiler cache (ccache alt)"
+    speed: "5-50x (distributed backend)"
+    mem: "~20MB"
+    size: "~8MB"
+    src: "github.com/mozilla/sccache"
+    apt: "sccache"
+    cargo: "sccache"
+    brew: "sccache"
+    dnf: "sccache"
+    pacman: "sccache"
+  - name: xdg-open-rs
+    tool: Anomalocaridid/handlr-regex
+    binary: handlr
+    replaces: xdg-open
+    desc: "xdg-utils alternative"
+    speed: "10-20ms (vs ~50ms xdg-open)"
+    mem: "~3MB"
+    size: "~2MB"
+    src: "github.com/Anomalocaridid/handlr-regex"
+    apt: "handlr"
+    cargo: "handlr-regex"
+    brew: "handlr"
+    dnf: "handlr"
+    pacman: "handlr"
+  - name: cut-rs
+    tool: sstadick/hck
+    binary: hck
+    replaces: cut
+    desc: "Sharp cut clone (multi-delimiter, CSV)"
+    speed: "~5ms startup"
+    mem: "~2MB"
+    size: "~2MB"
+    src: "github.com/sstadick/hck"
+    apt: "hck"
+    cargo: "hck"
+    brew: "hck"
+    dnf: "hck"
+    pacman: "hck"
+  - name: uniq-rs
+    tool: whitfin/runiq
+    binary: runiq
+    replaces: uniq
+    desc: "Filter duplicate lines (O(1) memory)"
+    speed: "similar to uniq"
+    mem: "~2MB"
+    size: "~2MB"
+    src: "github.com/whitfin/runiq"
+    apt: "runiq"
+    cargo: "runiq"
+    brew: "runiq"
+    dnf: "runiq"
+    pacman: "runiq"
+  - name: cp-rs
+    tool: tarka/xcp
+    binary: xcp
+    replaces: cp
+    desc: "Extended cp with progress and parallelism"
+    speed: "similar to cp (multi-threaded)"
+    mem: "~3MB"
+    size: "~2MB"
+    src: "github.com/tarka/xcp"
+    apt: "xcp"
+    cargo: "xcp"
+    brew: "xcp"
+    dnf: "xcp"
+    pacman: "xcp"
+  - name: tar-rs
+    tool: ouch-org/ouch
+    binary: ouch
+    replaces: tar
+    desc: "Painless compression/decompression"
+    speed: "similar to native tools"
+    mem: "~3MB"
+    size: "~3MB"
+    src: "github.com/ouch-org/ouch"
+    apt: "ouch"
+    cargo: "ouch"
+    brew: "ouch"
+    dnf: "ouch"
+    pacman: "ouch"
+  - name: convert-rs
+    tool: sharkdp/pastel
+    binary: pastel
+    replaces: convert
+    desc: "Color generation/analysis/conversion"
+    speed: "~5ms (vs 100-500ms ImageMagick)"
+    mem: "~3MB (vs IM 100MB+)"
+    size: "~3MB"
+    src: "github.com/sharkdp/pastel"
+    apt: "pastel"
+    cargo: "pastel"
+    brew: "pastel"
+    dnf: "pastel"
+    pacman: "pastel"
+  - name: bash-rs
+    tool: nushell/nushell
+    binary: nu
+    replaces: bash
+    desc: "Modern shell with typed data pipelines"
+    speed: "50-100ms startup (vs 3ms bash)"
+    mem: "~30-50MB"
+    size: "~15MB"
+    src: "github.com/nushell/nushell"
+    apt: "nushell"
+    cargo: "nushell"
+    brew: "nushell"
+    dnf: "nushell"
+    pacman: "nushell"
+  - name: shadowsocks-rs
+    tool: shadowsocks/shadowsocks-rust
+    binary: sslocal
+    replaces: shadowsocks
+    desc: "Rust port of shadowsocks proxy"
+    speed: "similar throughput"
+    mem: "~10MB"
+    size: "~8MB"
+    src: "github.com/shadowsocks/shadowsocks-rust"
+    apt: "shadowsocks-rust"
+    cargo: "shadowsocks-rust"
+    brew: "shadowsocks-rust"
+    dnf: "shadowsocks-rust"
+    pacman: "shadowsocks-rust"
+  - name: sudo-rs
+    tool: memorysafety/sudo-rs
+    binary: sudo-rs
+    replaces: sudo
+    desc: "Memory-safe sudo implementation"
+    speed: "~5-10ms startup"
+    mem: "~3MB"
+    size: "~3MB"
+    src: "github.com/memorysafety/sudo-rs"
+    apt: "sudo-rs"
+    cargo: "sudo-rs"
+    brew: "sudo-rs"
+    dnf: "sudo-rs"
+    pacman: "sudo-rs"
+  - name: coreutils-rs
+    tool: uutils/coreutils
+    binary: coreutils
+    replaces: coreutils
+    desc: "Cross-platform Rust rewrite of GNU coreutils"
+    speed: "similar or slightly faster"
+    mem: "similar"
+    size: "~3MB"
+    src: "github.com/uutils/coreutils"
+    apt: "uutils-coreutils"
+    cargo: "coreutils"
+    brew: "uutils-coreutils"
+    dnf: "uutils-coreutils"
+    pacman: "uutils-coreutils"
+  - name: brew-rs
+    tool: lucasgelfond/zerobrew
+    binary: zerobrew
+    replaces: brew
+    desc: "5-20x faster Homebrew alternative"
+    speed: "5-20x faster than brew"
+    mem: "~10MB (vs 30-50MB brew ruby)"
+    size: "~5MB"
+    src: "github.com/lucasgelfond/zerobrew"
+    apt: "zerobrew"
+    cargo: "zerobrew"
+    brew: "zerobrew"
+    dnf: "zerobrew"
+    pacman: "zerobrew"
+  - name: perf-rs
+    tool: ferrous-systems/cargo-flamegraph
+    binary: cargo-flamegraph
+    replaces: perf
+    desc: "Easy flamegraphs for Rust"
+    speed: "same as perf"
+    mem: "~3MB"
+    size: "~2MB"
+    src: "github.com/ferrous-systems/cargo-flamegraph"
+    apt: "cargo-flamegraph"
+    cargo: "flamegraph"
+    brew: "cargo-flamegraph"
+    dnf: "cargo-flamegraph"
+    pacman: "cargo-flamegraph"
+  - name: flamegraph.pl-rs
+    tool: jonhoo/inferno
+    binary: inferno-flamegraph
+    replaces: flamegraph.pl
+    desc: "Rust port of FlameGraph"
+    speed: "18-20x faster than perl flamegraph.pl"
+    mem: "controlled (vs perl peak)"
+    size: "~3MB"
+    src: "github.com/jonhoo/inferno"
+    apt: "inferno"
+    cargo: "inferno"
+    brew: "inferno"
+    dnf: "inferno"
+    pacman: "inferno"
+
+secondary:
+  - tool: sharkdp/diskus
+    binary: diskus
+    replaces: du
+    desc: "Minimal du -sh alternative"
+    speed: "12x faster than du -sh"
+    size: "~1MB"
+    apt: "diskus"
+    cargo: "diskus"
+    brew: "diskus"
+    dnf: "diskus"
+    pacman: "diskus"
+  - tool: Byron/dua-cli
+    binary: dua
+    replaces: du
+    desc: "Disk usage analyzer"
+    speed: "parallel walk"
+    size: "~3MB"
+    apt: "dua-cli"
+    cargo: "dua-cli"
+    brew: "dua-cli"
+    dnf: "dua-cli"
+    pacman: "dua"
+  - tool: nachoparker/dutree
+    binary: dutree
+    replaces: du
+    desc: "du + tree combined"
+    speed: "parallel walk"
+    size: "~2MB"
+    apt: "dutree"
+    cargo: "dutree"
+    brew: "dutree"
+    dnf: "dutree"
+    pacman: "dutree"
+  - tool: jhspetersson/fselect
+    binary: fselect
+    replaces: find
+    desc: "Find files with SQL-like queries"
+    speed: "similar to find"
+    size: "~3MB"
+    apt: "fselect"
+    cargo: "fselect"
+    brew: "fselect"
+    dnf: "fselect"
+    pacman: "fselect"
+  - tool: alexpasmantier/television
+    binary: tv
+    replaces: fzf
+    desc: "General purpose fuzzy finder TUI"
+    speed: "similar to fzf"
+    size: "~5MB"
+    apt: "television"
+    cargo: "television"
+    brew: "television"
+    dnf: "television"
+    pacman: "television"
+  - tool: jhbabon/scout
+    binary: scout
+    replaces: fzf
+    desc: "Friendly fuzzy finder"
+    speed: "similar to fzf"
+    size: "~2MB"
+    apt: "scout"
+    cargo: "scout"
+    brew: "scout"
+    dnf: "scout"
+    pacman: "scout"
+  - tool: aslpavel/sweep-rs
+    binary: sweep
+    replaces: fzf
+    desc: "Interactive search (fzf-inspired)"
+    speed: "similar to fzf"
+    size: "~3MB"
+    apt: "sweep-rs"
+    cargo: "sweep-rs"
+    brew: "sweep-rs"
+    dnf: "sweep-rs"
+    pacman: "sweep-rs"
+  - tool: martinvonz/jj
+    binary: jj
+    replaces: git
+    desc: "Git-compatible VCS (jj-vcs)"
+    speed: "2-10x faster than git"
+    size: "~10MB"
+    apt: "jj"
+    cargo: "jj-cli"
+    brew: "jj"
+    dnf: "jj"
+    pacman: "jj"
+  - tool: konradsz/igrep
+    binary: igrep
+    replaces: grep
+    desc: "Interactive Grep (rg frontend)"
+    speed: "similar to rg"
+    size: "~3MB"
+    apt: "igrep"
+    cargo: "igrep"
+    brew: "igrep"
+    dnf: "igrep"
+    pacman: "igrep"
+  - tool: acheronfail/repgrep
+    binary: repgrep
+    replaces: grep
+    desc: "Interactive ripgrep find-and-replace"
+    speed: "similar to rg"
+    size: "~3MB"
+    apt: "repgrep"
+    cargo: "repgrep"
+    brew: "repgrep"
+    dnf: "repgrep"
+    pacman: "repgrep"
+  - tool: sitkevij/hex
+    binary: hex
+    replaces: hexdump
+    desc: "Futuristic take on hexdump"
+    speed: "~5ms startup"
+    size: "~2MB"
+    apt: "hex"
+    cargo: "hex"
+    brew: "hex"
+    dnf: "hex"
+    pacman: "hex"
+  - tool: PaulJuliusMartinez/jless
+    binary: jless
+    replaces: jq
+    desc: "JSON viewer (jq+less alt)"
+    speed: "similar to jq"
+    size: "~3MB"
+    apt: "jless"
+    cargo: "jless"
+    brew: "jless"
+    dnf: "jless"
+    pacman: "jless"
+  - tool: Peltoche/lsd
+    binary: lsd
+    replaces: ls
+    desc: "Next gen ls command"
+    speed: "similar to ls"
+    size: "~3MB"
+    apt: "lsd"
+    cargo: "lsd"
+    brew: "lsd"
+    dnf: "lsd"
+    pacman: "lsd"
+  - tool: jacobdeichert/mask
+    binary: mask
+    replaces: make
+    desc: "CLI task runner (markdown)"
+    speed: "faster than make on simple tasks"
+    size: "~2MB"
+    apt: "mask"
+    cargo: "mask"
+    brew: "mask"
+    dnf: "mask"
+    pacman: "mask"
+  - tool: charklie/rsftch
+    binary: rsftch
+    replaces: neofetch
+    desc: "Lightning fast hardware fetch"
+    speed: "~5-10ms startup"
+    size: "~2MB"
+    apt: "rsftch"
+    cargo: "rsftch"
+    brew: "rsftch"
+    dnf: "rsftch"
+    pacman: "rsftch"
+  - tool: nivekuil/rip
+    binary: rip
+    replaces: rm
+    desc: "Safe rm alternative (no trash)"
+    speed: "similar to rm"
+    size: "~2MB"
+    apt: "rip"
+    cargo: "rip"
+    brew: "rip"
+    dnf: "rip"
+    pacman: "rip"
+  - tool: your-tools/ruplacer
+    binary: ruplacer
+    replaces: sed
+    desc: "Find and replace in source files"
+    speed: "similar to sed"
+    size: "~2MB"
+    apt: "ruplacer"
+    cargo: "ruplacer"
+    brew: "ruplacer"
+    dnf: "ruplacer"
+    pacman: "ruplacer"
+  - tool: tldr-pages/tlrc
+    binary: tlrc
+    replaces: tldr
+    desc: "tldr client in Rust"
+    speed: "~10-20ms"
+    size: "~2MB"
+    apt: "tlrc"
+    cargo: "tlrc"
+    brew: "tlrc"
+    dnf: "tlrc"
+    pacman: "tlrc"
+  - tool: pvolok/mprocs
+    binary: mprocs
+    replaces: tmux
+    desc: "Run multiple commands in parallel"
+    speed: "similar to tmux"
+    size: "~5MB"
+    apt: "mprocs"
+    cargo: "mprocs"
+    brew: "mprocs"
+    dnf: "mprocs"
+    pacman: "mprocs"
+  - tool: wez/wezterm
+    binary: wezterm
+    replaces: tmux
+    desc: "GPU terminal + multiplexer"
+    speed: "50-100ms startup"
+    size: "~20MB"
+    apt: "wezterm"
+    cargo: "wezterm"
+    brew: "wezterm"
+    dnf: "wezterm"
+    pacman: "wezterm"
+  - tool: bvaisvil/zenith
+    binary: zenith
+    replaces: top
+    desc: "top/htop with zoom-able charts"
+    speed: "similar to top"
+    size: "~5MB"
+    apt: "zenith"
+    cargo: "zenith"
+    brew: "zenith"
+    dnf: "zenith"
+    pacman: "zenith"
+  - tool: cjbassi/ytop
+    binary: ytop
+    replaces: top
+    desc: "TUI system monitor (archived)"
+    speed: "similar to top"
+    size: "~5MB"
+    apt: "ytop"
+    cargo: "ytop"
+    brew: "ytop"
+    dnf: "ytop"
+    pacman: "ytop"
+  - tool: nerdypepper/eva
+    binary: eva
+    replaces: bc
+    desc: "Calculator REPL"
+    speed: "similar to bc"
+    size: "~2MB"
+    apt: "eva"
+    cargo: "eva"
+    brew: "eva"
+    dnf: "eva"
+    pacman: "eva"
+  - tool: BurntSushi/xsv
+    binary: xsv
+    replaces: csvkit
+    desc: "Fast CSV toolkit"
+    speed: "10-50x faster than csvkit"
+    size: "~5MB"
+    apt: "xsv"
+    cargo: "xsv"
+    brew: "xsv"
+    dnf: "xsv"
+    pacman: "xsv"
+  - tool: Wilfred/difftastic
+    binary: difftastic
+    replaces: diff
+    desc: "Structural diff (syntax-aware)"
+    speed: "similar to diff"
+    size: "~10MB"
+    apt: "difftastic"
+    cargo: "difftastic"
+    brew: "difftastic"
+    dnf: "difftastic"
+    pacman: "difftastic"
+  - tool: raphamorim/rio
+    binary: rio
+    replaces: xterm
+    desc: "GPU terminal emulator"
+    speed: "30-50ms startup"
+    size: "~5MB"
+    apt: "rio"
+    cargo: "rio"
+    brew: "rio"
+    dnf: "rio"
+    pacman: "rio"
