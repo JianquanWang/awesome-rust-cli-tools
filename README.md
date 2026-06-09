@@ -334,7 +334,7 @@ find-rs --version
 | 仅查看 | `--list` 列出所有工具；`--print-map` 打印映射表。 |
 | 试运行 | `--dry-run` 只打印命令而不实际执行。 |
 | 多包管理器支持 | 每个工具都列出了 apt/cargo/brew/dnf/pacman 五个包的包名。 |
-| 反安装 | `./uninstall.sh` 移除所有 `~/.local/bin/[tool]-rs` 链接。 |
+| 卸载 | `./uninstall.sh` 移除所有 `~/.local/bin/[tool]-rs` 链接。 |
 | 自动 PATH | 自动将 `~/.local/bin` 写入 shell rc 文件。 |
 
 ```bash
@@ -435,7 +435,7 @@ echo 'eval "$(zoxide init zsh)"'  >> ~/.zshrc    # zsh
 awesome-rust-tools/
 ├── README.md           # 本文件（核心约定 + 完整映射表 + 优势速览）
 ├── install.sh          # 一键安装脚本（检测包管理器 + 创建 shim）
-├── uninstall.sh        # 一键反安装脚本
+├── uninstall.sh        # 一键卸载脚本
 ├── mappings.yaml       # 工具映射定义（数据源；apt/cargo/brew/dnf/pacman 包名）
 ├── aliases.sh          # 可选：rls/rcat/rfind/rgrep 等不冲突快捷函数
 └── .gitignore
