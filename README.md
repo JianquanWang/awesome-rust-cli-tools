@@ -1,10 +1,12 @@
-# awesome-rust-tools
+# awesome-rust-cli-tools
+
+**[🇨🇳 跳转到中文说明](#chinese-start)**
 
 ## English Version
 
 This repository collects and curates **Rust tools that genuinely replace common Linux/Unix commands** from the awesome-rust-tools list. We expose them under a unified `[tool]-rs` namespace, while **keeping the original Linux commands unchanged**.
 
-Data Source: [unpluggedcoder/awesome-rust-tools](https://github.com/unpluggedcoder/awesome-rust-tools) (155 tools. This project filters 77 of them as Linux command alternatives).
+Data Source: [unpluggedcoder/awesome-rust-tools](https://github.com/unpluggedcoder/awesome-rust-tools) (155 tools. This project filters 76 of them as Linux command alternatives).
 
 ---
 
@@ -46,7 +48,7 @@ Rust-rewritten CLI tools generally outperform GNU tools in speed, memory efficie
 - `dust` / `diskus` / `duat` are all du alternatives — you don't know which one to choose.
 - 26 tools replace 19 core Linux commands — the namespace is chaotic.
 
-This project unifies them under the **`[Original Linux Command Name]-rs`** naming scheme, totaling **51** main mappings. **It does not overwrite any of your original commands** — you can use whichever you prefer, and old scripts will not suddenly call the Rust version just because you installed `fd`.
+This project unifies them under the **`[Original Linux Command Name]-rs`** naming scheme, totaling **50** main mappings. **It does not overwrite any of your original commands** — you can use whichever you prefer, and old scripts will not suddenly call the Rust version just because you installed `fd`.
 
 ---
 
@@ -63,7 +65,7 @@ cd awesome-rust-tools
 # 3. Install one
 ./install.sh find         # Installs find-rs (which is fd)
 
-# 4. Install all 51 mappings at once
+# 4. Install all 50 mappings at once
 ./install.sh --all
 ```
 
@@ -224,7 +226,7 @@ awesome-rust-tools/
 
 ## Data Sources
 
-All tools are filtered from [unpluggedcoder/awesome-rust-tools](https://github.com/unpluggedcoder/awesome-rust-tools) (155 tools). This project specifically filters **77** tools that **truly replace one or more Linux/Unix commands** (51 primary + 26 secondary).
+All tools are filtered from [unpluggedcoder/awesome-rust-tools](https://github.com/unpluggedcoder/awesome-rust-tools) (155 tools). This project specifically filters **76** tools that **truly replace one or more Linux/Unix commands** (50 primary + 26 secondary).
 
 **Out of Scope**:
 - Standalone TUI tools (e.g., yazi, xplr, btop, broot in explorer mode)
@@ -243,13 +245,13 @@ MIT
 <a id="chinese-start"></a>
 ---
 
-# awesome-rust-tools (中文版)
+# awesome-rust-cli-tools (中文版)
 
 ## 中文说明
 
 本项目旨在整理和汇集来自 `awesome-rust-tools` 列表的 **真正替代 Linux/Unix 命令的 Rust 工具**。我们统一将它们暴露在 `[tool]-rs` 命名空间下，但**原 Linux 命令保持原名不变**。
 
-数据源：[unpluggedcoder/awesome-rust-tools](https://github.com/unpluggedcoder/awesome-rust-tools) (共 155 个工具，本项目筛选了其中的 **77 个**作为 Linux 命令的替代品)。
+数据源：[unpluggedcoder/awesome-rust-tools](https://github.com/unpluggedcoder/awesome-rust-tools) (共 155 个工具，本项目筛选了其中的 **76 个**作为 Linux 命令的替代品)。
 
 ---
 
@@ -291,7 +293,7 @@ Rust 重写的 CLI 工具在速度、内存、安全性方面普遍优于 GNU �
 - `dust` / `diskus` / `duat` 都是 du 替代 — 不知道选哪个。
 - 26 个工具替代了 19 个核心 Linux 命令 — 命名空间已经杂乱无章。
 
-本项目统一为 **`[原 linux 命令名]-rs`** 命名，总共有 **51 个**主要映射。**它不会覆盖你任何原始命令** — 你想用哪个就用哪个，老脚本也不会因为安装了 fd 就突然调用 rust 版的 find。
+本项目统一为 **`[原 linux 命令名]-rs`** 命名，总共有 **50 个**主要映射。**它不会覆盖你任何原始命令** — 你想用哪个就用哪个，老脚本也不会因为安装了 fd 就突然调用 rust 版的 find。
 
 ---
 
@@ -308,7 +310,7 @@ cd awesome-rust-tools
 # 3. 试装一个
 ./install.sh find         # 安装 find-rs (即 fd)
 
-# 4. 一键安装全部 51 个映射
+# 4. 一键安装全部 50 个映射
 ./install.sh --all
 ```
 
@@ -468,7 +470,7 @@ awesome-rust-tools/
 
 ## 数据来源
 
-所有工具均从 [unpluggedcoder/awesome-rust-tools](https://github.com/unpluggedcoder/awesome-rust-tools) (155 个工具) 中筛选。本项目筛选了其中**真正替代一个或多个 Linux/Unix 命令**的 **77 个**（51 主映射 + 26 次选映射）。
+所有工具均从 [unpluggedcoder/awesome-rust-tools](https://github.com/unpluggedcoder/awesome-rust-tools) (155 个工具) 中筛选。本项目筛选了其中**真正替代一个或多个 Linux/Unix 命令**的 **76 个**（50 主映射 + 26 次选映射）。
 
 **不在本项目范畴内**：
 - 独立的 TUI 工具（如 yazi, xplr, btop, broot 的独立 explorer 模式）
