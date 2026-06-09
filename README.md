@@ -194,8 +194,7 @@ awesome-rust-tools/
 ├── install.sh          # One-click installation script (Package manager detection + shim creation)
 ├── uninstall.sh        # One-click uninstallation script
 ├── mappings.yaml       # Tool mapping definition (Data source; apt/cargo/brew/dnf/pacman package names)
-├── examples/
-│   └── aliases.sh      # Optional: shorthand functions like rls/rcat/rfind/rgrep
+├── aliases.sh          # Optional: shorthand functions like rls/rcat/rfind/rgrep
 └── .gitignore
 ```
 
@@ -438,8 +437,7 @@ awesome-rust-tools/
 ├── install.sh          # 一键安装脚本（检测包管理器 + 创建 shim）
 ├── uninstall.sh        # 一键反安装脚本
 ├── mappings.yaml       # 工具映射定义（数据源；apt/cargo/brew/dnf/pacman 包名）
-├── examples/
-│   └── aliases.sh      # 可选：rls/rcat/rfind/rgrep 等不冲突快捷函数
+├── aliases.sh          # 可选：rls/rcat/rfind/rgrep 等不冲突快捷函数
 └── .gitignore
 ```
 
