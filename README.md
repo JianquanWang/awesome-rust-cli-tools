@@ -56,7 +56,7 @@ This project unifies them under the **`[Original Linux Command Name]-rs`** namin
 
 ```bash
 # 1. Clone or download this repository
-git clone https://github.com/<your-user>/awesome-rust-tools.git
+git clone https://github.com/JianquanWang/awesome-rust-tools.git
 cd awesome-rust-tools
 
 # 2. List all mappings
@@ -300,7 +300,7 @@ Rust 重写的 CLI 工具在速度、内存、安全性方面普遍优于 GNU �
 
 ```bash
 # 1. 克隆或下载本仓库
-git clone https://github.com/<your-user>/awesome-rust-tools.git
+git clone https://github.com/JianquanWang/awesome-rust-tools.git
 cd awesome-rust-tools
 
 # 2. 列出所有映射
